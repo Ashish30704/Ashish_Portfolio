@@ -8,8 +8,8 @@ const InternshipCard = ({ type, title, duration, location, company, description,
         <div className="shrink-0 w-14 sm:w-20 h-16 flex items-center justify-center overflow-hidden shadow-md">
           <img src={logo} alt={company} className=" w-12 sm:w-16 h-14 object-contain" loading="lazy" />
         </div>
-        <div className="flex-1 min-w-0">
-          <h3 className="title-1 text-sm mb-1 truncate" title={title}>{title}</h3>
+        <div className="flex-1 min-w-0 items-center">
+          <h3 className="title-1 text-sm mb-1" title={title}>{title}</h3>
           <p className="text-zinc-400 text-sm font-medium truncate" title={company}>{company}</p>
         </div>
       </div>
