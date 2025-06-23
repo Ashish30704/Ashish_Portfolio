@@ -16,7 +16,7 @@ const skillItem = [
     {
       imgSrc: '/images/skills/github.png',
       label: 'Git Hub',
-      desc: 'Versio Control'
+      desc: 'Version Control'
     },
     {
         imgSrc: '/images/skills/redux.png',
