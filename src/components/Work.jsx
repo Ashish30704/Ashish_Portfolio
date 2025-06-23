@@ -18,7 +18,7 @@ const Work = () => {
   return (
     <section id='work' className="section">
       <div className="container">
-        <h2 className="headline-2 mb-8">
+        <h2 className="headline-2 mb-8 reveal-up">
           My Work and Experience
         </h2>
         <div className="grid gap-x-4 gap-y-5 sm:grid-cols-[repeat(auto-fill,_minmax(380px,_1fr))]">
@@ -34,6 +34,7 @@ const Work = () => {
                 logo={logo}
                 certification={certification}
                 key={key}
+                classes='reveal-up'
               />
             ))
           }

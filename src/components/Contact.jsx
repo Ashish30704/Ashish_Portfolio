@@ -41,11 +41,11 @@ const Contact = () => {
 
             <div className="mb-12 lg:mb-2 lg:flex-col">
 
-                <h2 className="headline-2 lg:max-w-[12ch]">
+                <h2 className="headline-2 lg:max-w-[12ch] reveal-up">
                     Contact Me
                 </h2>
 
-                <p className="text-zinc-400 mt-3 mb-8 max-w-[30ch]">
+                <p className="text-zinc-400 mt-3 mb-8 max-w-[30ch] reveal-up">
                     React out today to discuss your project need and start collaborating on something amazing!
                 </p>
 
@@ -56,7 +56,7 @@ const Contact = () => {
                                 key={key} 
                                 href={href} 
                                 target="_blank" 
-                                className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-[background-color,color] hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/80"
+                                className="w-12 h-12 grid place-items-center ring-inset ring-2 ring-zinc-50/5 rounded-lg transition-[background-color,color] hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/80 reveal-up "
                             >
                                 {icon}
                             </a>
@@ -69,13 +69,13 @@ const Contact = () => {
             <form 
                 action="https://getform.io/f/bolorlwa" 
                 method='POST' 
-                className="xl:pl-10 2xl:pl-20"
+                className="xl:pl-10 2xl:pl-20 "
             >
                 <div className="md:grid md:items-center md:grid-cols-2 md:gap-2">
                     <div className="mb-4">
                         <label 
                             htmlFor="name" 
-                            className="label"
+                            className="label reveal-up"
                         >
                             Name
                         </label>
@@ -86,14 +86,14 @@ const Contact = () => {
                             autoComplete='name'
                             required
                             placeholder='Henry Smith'
-                            className="text-field" 
+                            className="text-field reveal-up" 
                         />
                     </div>
 
                     <div className="mb-4">
                         <label 
                             htmlFor="email" 
-                            className="label"
+                            className="label reveal-up"
                         >
                             Email
                         </label>
@@ -104,7 +104,7 @@ const Contact = () => {
                             autoComplete='email'
                             required
                             placeholder='ashish30704@gmail.com'
-                            className="text-field" 
+                            className="text-field reveal-up" 
                         />
                     </div>
                 </div>
@@ -112,7 +112,7 @@ const Contact = () => {
                 <div className="mb-4">
                     <label 
                         htmlFor="message" 
-                        className="label"
+                        className="label reveal-up"
                     >
                         Message
                     </label>
@@ -120,7 +120,7 @@ const Contact = () => {
                     <textarea 
                         name="message" 
                         id="message"
-                        className='text-field resize-y min-h-32 max-h-80'
+                        className='text-field resize-y min-h-32 max-h-80 reveal-up'
                         required
                         placeholder='Hi!'
                     >
@@ -128,7 +128,7 @@ const Contact = () => {
                     </textarea>
                 </div>
 
-                <button type="submit" className="btn btn-primary [&]:max-w-full w-full justify-center ">
+                <button type="submit" className="btn btn-primary [&]:max-w-full w-full justify-center reveal-up">
                     Submit
                 </button>
             </form>

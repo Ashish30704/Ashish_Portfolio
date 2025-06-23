@@ -75,11 +75,11 @@ const Skills = () => {
     <section className="section">
         <div className="container">
 
-            <h2 className="headline-2">
+            <h2 className="headline-2 reveal-up">
                 Essential Tools and Tech Stack
             </h2>
 
-            <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch]">
+            <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch] reveal-up ">
                 Discover my Skill set and tools and technologies I use to build exceptional, high-performing mobile apps for both Android and I-phone.
             </p>
 
@@ -87,7 +87,7 @@ const Skills = () => {
                 {
                     skillItem.map(({imgSrc, label, desc}, key) => 
                     (
-                        <SkillCard label={label} imgSrc={imgSrc} desc={desc} key={key} />
+                        <SkillCard label={label} imgSrc={imgSrc} desc={desc} key={key} classes="reveal-up" />
                     ))
                 }
             </div>

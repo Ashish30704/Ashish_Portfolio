@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const InternshipCard = ({ type, title, duration, location, company, description, logo, certification }) => {
+const InternshipCard = ({ type, title, duration, location, company, description, logo, certification, classes }) => {
   return (
-    <div className="relative flex flex-col gap-4 p-6 rounded-3xl bg-gradient-to-br from-zinc-800 via-zinc-900 to-zinc-900 shadow-xl ring-1 ring-inset ring-zinc-50/10 hover:scale-[1.01] hover:shadow-2xl transition-all duration-300">
+    <div className={"relative p-7 rounded-2xl bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5 transition-colors " + classes}>
       <div className="flex items-center gap-4">
         <div className="shrink-0 w-14 sm:w-20 h-16 flex items-center justify-center overflow-hidden shadow-md">
           <img src={logo} alt={company} className=" w-12 sm:w-16 h-14 object-contain" loading="lazy" />
